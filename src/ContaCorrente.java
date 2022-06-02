@@ -1,10 +1,14 @@
 
 
 public class ContaCorrente extends Conta{
+	
+	private static ContaCorrente contaCorrente;
+	
 
 	public ContaCorrente(Cliente cliente) {
 		super(cliente);
-		// TODO Auto-generated constructor stub
+		contaCorrente = new ContaCorrente(cliente);
+	
 	}
 	
 	public void sacar(double valor) {
